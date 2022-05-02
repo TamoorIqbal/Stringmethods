@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main section-center">
+    <span id="heading">JavaScript String Methods</span>
+
+    <h2>JavaScript String Length</h2>
+    <p>The length property returns the length of a string:</p>
+    <button onclick="myFunctionL()">Try it</button>
+    <p class="demoStyle">function myFunctionL { <br>
+    
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br>
+        document.getElementById("demo").innerHTML = text.length;<br>
+    }<br> </p>
+    <p class="demoStyle" id="demo" ></p>
+
+    <h2>JavaScript String slice()</h2>
+    <p>The slice() method extract a part of a string
+    and returns the extracted parts in a new string:</p>
+    <button onclick="myFunctionS()">Try it</button>
+    <p class="demoStyle"> function myFunctionS() { <br>
+        let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br>
+        document.getElementById("demo1").innerHTML = str.slice(1,13);<br>
+        
+    }</p>
+    <p class="demoStyle" id="demo1"></p>
+
+    <h2>JavaScript String substring()</h2>
+    <p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+    <button onclick="myFunctionSub()">Try it</button>
+    <p class="demoStyle">
+        function myFunctionSub() {<br>
+            let str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br>
+            document.getElementById("demo2").innerHTML = str1.substring(1,13);<br>
+        }
+    </p>
+    <p class="demoStyle" id="demo2"></p>
+    
+    <h2>Replacing String Content</h2>
+    <p>Replace "Microsoft" with "Our website" in the paragraph below:</p>
+    <button onclick="myFunction()">Try it</button>
+    <p class="demoStyle">
+        function myFunction() { <br>
+            let text = document.getElementById("demo3").innerHTML;<br>
+            document.getElementById("demo3").innerHTML =<br>
+            text.replace("Microsoft","Our website");<br>
+        }
+    </p>
+    <p class="demoStyle" id="demo3">Please visit Microsoft!</p>
+
+    <h2>JavaScript String toUpperCase()</h2>
+    <p>Convert string to upper case:</p>
+    <button onclick="myFunction1()">Try it</button>
+    <p class="demoStyle">
+        function myFunction1(params) { <br>
+            let text = document.getElementById("demo4").innerHTML;<br>
+            document.getElementById("demo4").innerHTML =<br>
+            text.toUpperCase();<br>
+        }
+    </p>
+    <p class="demoStyle" id="demo4">Hello World!</p>
+
+    <h2>JavaScript String toLowerCase()</h2>
+    <p>Convert string to lower case:</p>
+    <button onclick="myFunction2()">Try it</button>
+    <p class="demoStyle">
+        function myFunction2() {<br>
+            let text = document.getElementById("demo5").innerHTML;<br>
+            document.getElementById("demo5").innerHTML =<br>
+            text.toLowerCase();<br>
+        }
+    </p>
+    <p class="demoStyle" id="demo5">Hello World!</p>
+
+    <h2>JavaScript String concat()</h2>
+    <p>The concat() method joins two or more strings:</p>
+    <button onclick="myFunction3()">Try it</button>
+    <p class="demoStyle">
+        function myFunction3() {<br>
+    
+            let text1 = "Hello";<br>
+            let text2 = "World!";<br>
+            let text3 = text1.concat(" ",text2);<br>
+            document.getElementById("demo6").innerHTML = text3;<br>
+        }
+    </p>
+    <p class="demoStyle" id="demo6"></p>
+
+    <h2>The trim() Method</h2>
+    <p>The trim() method removes whitespace from both sides of a string:</p>
+    <button onclick="myFunction4()">Try it</button>
+    <p class="demoStyle">
+        function myFunction4() {<br>
+            let text1 = "     Hello World!     ";<br>
+            let text2 = text1.trim();
+            document.getElementById("demo7").innerHTML =<br>
+            "Length text1=" + text1.length + "<br>Length2 text2=" + text2.length;<br>
+        }
+    </p>
+    <p class="demoStyle" id="demo7"></p>
+
+    <h2>JavaScript String charAt()</h2>
+    <p>The charAt() method returns the character at a given position in a string:</p>
+    <button onclick="myFunction5()">Try it</button>
+    <p class="demoStyle">
+        function myFunction5() { <br>
+            var text = "HELLO WORLD";<br>
+            document.getElementById("demo8").innerHTML = text.charAt(0);<br>
+        }  
+    </p>
+    <p class="demoStyle" id="demo8"></p>
+
+    <h2>JavaScript String charCodeAt()</h2>
+    <p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
+    <button onclick="myFunction6()">Try it</button>
+    <p class="demoStyle">
+        function myFunction6() { <br>
+            var text = "HELLO WORLD";<br>
+            document.getElementById("demo9").innerHTML = text.charCodeAt(0);<br>
+        } 
+    </p>
+    <p class="demoStyle" id="demo9"></p>
+
+    <h2>JavaScript String split()</h2>
+    <p>Display the first array element, after a string split:</p>
+    <button onclick="myFunction7()">Try it</button>
+    <p class="demoStyle">
+        function myFunction7() { <br>
+            let text = "a,b,c,d,e,f";<br>
+            const myArray = text.split(",");<br>
+            document.getElementById("demo10").innerHTML = myArray[0];<br>
+        }
+    </p>
+    <p class="demoStyle" id="demo10"></p>
+
+
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
